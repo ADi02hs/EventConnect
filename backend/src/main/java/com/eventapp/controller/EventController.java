@@ -1,0 +1,41 @@
+package com.eventapp.controller;
+import org.springframework.*;
+
+import com.eventapp.entity.Event;
+import com.eventapp.service.EventService;
+
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+@CrossOrigin(origins = "http://localhost:5173")
+@RestController
+@RequestMapping("/api/events")
+public class EventController {
+
+    private final EventService eventService;
+
+    public EventController(EventService eventService) {
+        this.eventService = eventService;
+    }
+
+    @PostMapping
+    public Event createEvent(@RequestBody Event event) {
+        return eventService.createEvent(event);
+    }
+
+    @GetMapping
+    public List<Event> getAllEvents() {
+        return eventService.getAllEvents();
+    }
+
+    @GetMapping("/{id}")
+    public Event getEventById(@PathVariable Long id) {
+        return eventService.getEventById(id);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteEvent(@PathVariable Long id) {
+        eventService.deleteEvent(id);
+        return "Event deleted successfully";
+    }
+}

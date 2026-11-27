@@ -1,0 +1,27 @@
+# Java / Spring Boot
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.project
+frontend/.settings/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+
+# Logs
+*.log
+
