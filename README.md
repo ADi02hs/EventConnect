@@ -1,4 +1,5 @@
 # EventConnect
+<<<<<<< HEAD
 
 EventConnect is a web-based event staffing platform that connects event organisers with candidates looking for temporary event opportunities.
 
@@ -68,3 +69,6 @@ Authentication, deployment, and additional production features are planned for f
 ## Developer
 
 Developed as a personal full-stack web development project.
+=======
+A web-based event staffing platform connecting event organisers with candidates looking for event opportunities.
+>>>>>>> 7ad074aced96d91566d79f0f8f8ae4eeed234dc9
